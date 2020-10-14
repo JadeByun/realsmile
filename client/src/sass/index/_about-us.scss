@@ -1,0 +1,19 @@
+.about-us {
+  grid-column: margin-start / margin-end;
+  padding: 5rem 10rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+  justify-items: center;
+  align-items: center;
+
+  &__logo {
+    width: 30%;
+    margin: 3rem 0;
+  }
+
+  &__content {
+    width: 80%;
+  }
+}

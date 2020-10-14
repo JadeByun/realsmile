@@ -1,0 +1,9 @@
+.search-box {
+  grid-column: margin-start / margin-end;
+  justify-self: center;
+
+  position: relative;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}

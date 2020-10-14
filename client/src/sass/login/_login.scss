@@ -1,0 +1,29 @@
+// .login {
+//   grid-column: col-start 4 / col-end 8;
+//   justify-self: center;
+//   align-content: center;
+
+//   &__form {
+//     width: 80%;
+//     background-color: $color-white;
+//     border-radius: 3px;
+//     border: 3px soild;
+
+//     position: relative;
+//     &::after {
+//       content: '';
+//       clear: both;
+//       display: inline;
+//     }
+//   }
+// }
+
+.login {
+  grid-column: col-start 4 / col-end 8;
+  justify-self: center;
+
+  position: relative;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}

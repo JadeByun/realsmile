@@ -1,0 +1,27 @@
+body {
+  font-family: $font-text;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: $color-grey-dark-1;
+}
+
+.heading-primary {
+  font-family: $font-title;
+  color: $color-blue-dark;
+
+  backface-visibility: hidden;
+  line-height: 3rem;
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.heading-secondary {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  letter-spacing: 0.2rem;
+}

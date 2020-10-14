@@ -1,0 +1,19 @@
+.nav {
+  background-color: $color-blue-light;
+  color: $color-white;
+
+  grid-column: margin-start / margin-end;
+
+  display: flex;
+  justify-content: space-between;
+
+  /////// LOGO ///////
+  .logo {
+    height: 3.25rem;
+    padding: 5px;
+  }
+
+  &__logged--out {
+    align-self: end;
+  }
+}

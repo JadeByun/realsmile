@@ -1,0 +1,68 @@
+// COLOR VARIABLES
+$color-blue: #0424d9;
+$color-blue-light: #0528f2;
+$color-blue-dark: #021e73;
+
+$color-yellow: #f2e205;
+$color-yellow-dark: #f2cb05;
+
+$color-white: #fff;
+$color-black: #000;
+$color-grey-light-1: #eee;
+$color-grey-light-2: #ccc;
+$color-grey-light-3: #aaa;
+
+$color-grey-dark-1: #444;
+$color-grey-dark-2: #222;
+
+// FONT VARIABLES
+$font-title: 'Source Sans Pro', Sans-Serif;
+$font-text: 'Sintony', Sans-Serif;
+
+// SHADOW VARIABLES
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+$shadow-obj: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-family: $font-text;
+  font-size: 1.6rem;
+  color: $color-grey-dark-1;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 136.6rem;
+  margin: 0 auto;
+
+  background-color: $color-grey-light-1;
+  box-shadow: $shadow-light;
+
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: repeat(6, min-content);
+  grid-template-columns:
+    [margin-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 15rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [margin-end];
+}
