@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
           availability now.
       </h2>
         <div className="u-center-text u-margin-top-small">
-          <a href="#" className="btn-round">Start Now</a>
+          <Link to='/employee/register' className="btn-round">Start Now</Link>
         </div>
       </div>
       <div className="header__blank"></div>

@@ -1,19 +1,28 @@
 .form {
-  margin: 10rem 0;
+  width: 60%;
+  margin: 7rem 0;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: $color-grey-light-1;
+  padding: 5rem;
+  border-radius: .5rem;
+
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 
   &__input {
     font-size: 1.2rem;
     font-family: inherit;
+    color: inherit;
     width: 100%;
     padding: 1.5rem 2rem;
-    margin: 2rem 0;
-    // border-radius: 3px;
-    border: 1px solid $color-grey-light-2;
+    border-radius: .5rem;
+    border: none;
     box-shadow: $shadow-light;
+    transition: all .3s;
 
     display: block;
 
@@ -26,9 +35,19 @@
     &:focus:invalid {
       border-bottom: 3px solid $color-grey-light-2;
     }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-2;
+    }
   }
 
-  // &__group {
-  //   background-color: $color-white;
-  // }
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $color-blue-dark;
+    margin-left: 1rem;
+    margin-bottom: .7rem;
+    display: block;
+    transition: all .3s;
+  }
 }

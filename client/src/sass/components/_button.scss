@@ -24,16 +24,17 @@
   &,
   &:link,
   &:visited {
-    background-color: $color-blue-dark;
+    background-color: $color-blue;
     color: $color-white;
-    text-transform: uppercase;
     text-decoration: none;
     padding: 1.2rem 3rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: $font-title;
 
     border: none;
     cursor: pointer;
@@ -43,7 +44,7 @@
 .btn-text {
   &:link,
   &:visited {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: $color-blue-dark;
     display: inline-block;
     text-decoration: none;
@@ -52,12 +53,12 @@
     transition: all 0.2s;
   }
 
-  &:hover {
-    background-color: $color-blue-dark;
-    color: $color-white;
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-    transform: translateY(-2px);
-  }
+  // &:hover {
+  //   background-color: $color-blue-dark;
+  //   color: $color-white;
+  //   box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+  //   transform: translateY(-2px);
+  // }
 
   &:active {
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);

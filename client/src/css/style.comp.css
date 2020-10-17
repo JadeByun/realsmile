@@ -21,9 +21,9 @@ body {
 .container {
   max-width: 136.6rem;
   margin: 0 auto;
-  background-color: #eee;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   min-height: 100vh;
+  position: relative;
   display: grid;
   grid-template-rows: repeat(6, min-content);
   grid-template-columns: [margin-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem, 1fr) [margin-end]; }
@@ -77,19 +77,27 @@ body {
   margin-top: 8rem !important; }
 
 .form {
-  margin: 10rem 0;
+  width: 60%;
+  margin: 7rem 0;
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  background-color: #eee;
+  padding: 5rem;
+  border-radius: .5rem; }
+  .form__group:not(:last-child) {
+    margin-bottom: 2rem; }
   .form__input {
     font-size: 1.2rem;
     font-family: inherit;
+    color: inherit;
     width: 100%;
     padding: 1.5rem 2rem;
-    margin: 2rem 0;
-    border: 1px solid #ccc;
+    border-radius: .5rem;
+    border: none;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+    transition: all .3s;
     display: block; }
     .form__input:focus {
       outline: none;
@@ -97,6 +105,16 @@ body {
       border-bottom: 3px solid #f2cb05; }
     .form__input:focus:invalid {
       border-bottom: 3px solid #ccc; }
+    .form__input::-webkit-input-placeholder {
+      color: #222; }
+  .form__label {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #021e73;
+    margin-left: 1rem;
+    margin-bottom: .7rem;
+    display: block;
+    transition: all .3s; }
 
 .btn-inline {
   text-decoration: none;
@@ -115,33 +133,28 @@ body {
     outline: none; }
 
 .btn-round, .btn-round:link, .btn-round:visited {
-  background-color: #021e73;
+  background-color: #0424d9;
   color: #fff;
-  text-transform: uppercase;
   text-decoration: none;
   padding: 1.2rem 3rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Source Sans Pro", Sans-Serif;
   border: none;
   cursor: pointer; }
 
 .btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #021e73;
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #021e73;
   padding: 3px 10px;
   transition: all 0.2s; }
-
-.btn-text:hover {
-  background-color: #021e73;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
 
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
