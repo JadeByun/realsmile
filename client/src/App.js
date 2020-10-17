@@ -10,7 +10,7 @@ import Navbar from './components/layout/Navbar';
 
 const App = () => 
 <Router>
-  <Fragment>
+  <Fragment className='containers'>
     <Navbar />
     <Route exact path='/' component={Header} />
     <section className="container">

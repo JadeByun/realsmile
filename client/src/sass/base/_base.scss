@@ -48,14 +48,13 @@ body {
   line-height: 1.6;
 }
 
-.container {
+.containers {
   max-width: 136.6rem;
   margin: 0 auto;
   // background-color: $color-grey-light-1;
   box-shadow: $shadow-light;
   min-height: 100vh;
 
-  position: relative;
   display: grid;
   grid-template-rows: repeat(6, min-content);
   grid-template-columns:
@@ -64,4 +63,8 @@ body {
       [col-start] minmax(min-content, 15rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [margin-end];
+}
+
+.container {
+  position: relative;
 }
